@@ -4,7 +4,7 @@ library(ggplot2)
 
 mu0<-30
 
-# creating a funtion 
+# creating a funtion.
 
 myplot <- function(sigma,mua,n,alpha){
   g = ggplot(data.frame(mu=c(27,36)),aes(x=mu))
@@ -15,7 +15,7 @@ myplot <- function(sigma,mua,n,alpha){
   g
 }
 
-#plotting to see the power curve
+# plotting to see the power curve.
 
 manipulate(
   myplot(sigma,mua,n,alpha),
